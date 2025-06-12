@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overspisningscoach og vanecoach i Kolding kommune.">
+    <meta property="og:title" content="Ginta/ vane- og overspisningscoah">
+    <meta property="og:description" content="Overspisningscoach og vanecoach i Kolding kommune.">
+    <meta property="og:image" content="https://ginta.dk/assets/images/thumbnail.webp">
+    <meta property="og:url" content="https://ginta.dk">
+    <meta property="og:type" content="website">
+    <title>Ginta/ vane- og overspisningscoah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
+    <script src="/js/script.js" defer></script>
+</head>
+
+
+
+<body>
+    <div id="app">
+        <nav>
+            <router-link to="/" class="logo">
+                <img src="assets/svgs/logo.svg" alt="Ginta Logo" width="150" height="100">
+            </router-link>
+            <div class="routes">
+                <router-link to="/" class="nav-link">Hjem</router-link>
+                <div class="dropdown">
+                    <router-link to="/" class="nav-link">Jeg tilbyder</router-link>
+                    <div class="content">
+                        <router-link to="/" class="nav-link">Individuelt forløb</router-link>
+                        <router-link to="/" class="nav-link">Gruppe forløb</router-link>
+                        <router-link to="/" class="nav-link">Rygestop forløb</router-link>
+                        <router-link to="/" class="nav-link">Online forløb</router-link>
+                    </div>
+                </div>
+                <router-link to="/about" class="nav-link">Om Ginta</router-link>
+                <router-link to="/contact" class="nav-link">Kontakt</router-link>
+
+                <a href="https://www.facebook.com/ginta.overspisningscoach" target="_blank" class="nav-link"
+                    aria-label="Visit Ginta on Facebook">
+                    <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="#225B5D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/ginta.overspisningscoach/" target="_blank" class="nav-link"
+                    aria-label="Visit Ginta on Instagram">
+                    <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="#225B5D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+
+            </div>
+            <div class="menu">
+                <img class="before" src="assets/svgs/circle.svg" width="30" height="30" alt="Circle menu icon"
+                    srcset="">
+            </div>
+        </nav>
+        <div class="mobile stop">
+            <router-link to="/" class="mobile-link">Hjem</router-link>
+            <router-link to="/" class="mobile-link">Individuelt forløb</router-link>
+            <router-link to="/" class="mobile-link">Gruppe forløb</router-link>
+            <router-link to="/" class="mobile-link">Rygestop forløb</router-link>
+            <router-link to="/" class="mobile-link">Online forløb</router-link>
+            <router-link to="/about" class="mobile-link">Om Ginta</router-link>
+            <router-link to="/contact" class="mobile-link">Kontakt</router-link>
+        </div>
+        <router-view></router-view>
+        <footer>
+            <div class="footer">
+                <h4>Kontakt</h4>
+                <router-link to="/contact">Skriv eller ring</router-link>
+                <div class="footerSocials">
+                    <a href="https://www.facebook.com/ginta.overspisningscoach" target="_blank"
+                        aria-label="Visit Ginta on Facebook">
+                        <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="#225B5D" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/ginta.overspisningscoach/" target="_blank"
+                        aria-label="Visit Ginta on Instagram">
+                        <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="#225B5D" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <h4>Jeg tilbyder</h4>
+                <router-link to="/">Individuelt forløb</router-link>
+                <router-link to="/">Gruppe forløb</router-link>
+                <router-link to="/">Rygestop forløb</router-link>
+                <router-link to="/">Online forløb</router-link>
+            </div>
+            <div class="footer">
+                <h4>Om Ginta</h4>
+                <router-link to="/">Gå til forside</router-link>
+                <router-link to="/">Om mig</router-link>
+                <router-link to="/">Min livserfaring med tvangsoverspisning</router-link>
+            </div>
+            <div class="footer">
+                <h4>Betingelser</h4>
+                <router-link to="/">Samarbejdsvilkår og betalingsbetingelser</router-link>
+                <p>© 2025 Ginta/ vane- og overspisningscoach. Kolding, Denmark.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

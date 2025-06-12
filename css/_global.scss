@@ -1,0 +1,106 @@
+* {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$turkis: #04D1AF;
+$darkTurkis: #225B5D;
+$purple: #2E2046;
+
+body {
+    a {
+        color: $darkTurkis;
+        text-decoration: none;
+        transition: .5s;
+        &:hover {
+            color: $turkis;
+        }
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 500
+    }
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 600
+    }
+    p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 35px;
+    }
+}
+
+
+
+.socials {
+    transition: .5s;
+    &:hover {
+        stroke: #04D1AF;
+    }
+}
+
+.white {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px;
+    border-radius: 50px;
+    gap: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 700px;
+    color: $darkTurkis;
+    div {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.green {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px;
+    border-radius: 50px;
+    gap: 50px;
+    background-color: $darkTurkis;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 700px;
+    color: white;
+    div {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+button {
+    padding: 15px 50px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background: $turkis;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: .5s;
+    &:hover {
+        background-color: #143738;
+        cursor: pointer;
+    }
+}
