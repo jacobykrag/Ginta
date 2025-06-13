@@ -2,7 +2,7 @@ export default {
 template: `
 
 <section class="testimonial-list">
-  <img src="/assets/svgs/women.webp" width="200" height="200">
+  <img src="/assets/svgs/Women.webp" width="200" height="200">
   <h2>Hvad mine klienter siger</h2>
   <hr id="green">
   <article class="testimonial">

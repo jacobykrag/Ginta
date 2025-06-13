@@ -7,7 +7,7 @@ export default {
 
 template: `
 <section class="pairs">
-    <img src="/assets/svgs/man.webp" alt="Woman" height="200" width="200">
+    <img src="/assets/svgs/Man.webp" alt="Woman" height="200" width="200">
     <h1>Online forløb</h1>
     <div class="green">
         <h4>Online forløb; er for dig som ikke har mulighed for at mødes med mig fysisk eller ganske enkelt foretrækker

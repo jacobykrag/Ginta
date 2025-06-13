@@ -6,7 +6,7 @@ export default {
     },
 template: `
 <section class="pairs">
-    <img src="/assets/svgs/women.webp" alt="Woman" height="200" width="200">
+    <img src="/assets/svgs/Women.webp" alt="Woman" height="200" width="200">
     <h1>Gruppe forløb</h1>
     <div class="green">
         <h4>Gruppeforløb; er for dig som ønsker et fællesskab af ligesindede. At være udfordret med krop og spisning kan
