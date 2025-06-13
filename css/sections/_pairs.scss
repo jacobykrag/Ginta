@@ -1,0 +1,10 @@
+section.pairs {
+    padding: 200px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h1, h2 {
+        color: $darkTurkis;
+    }
+}

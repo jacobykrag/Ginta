@@ -11,32 +11,36 @@ body a {
   color: #225B5D;
   text-decoration: none;
   transition: 0.5s;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 body a:hover {
   color: #04D1AF;
 }
 body h1 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bold;
+  line-height: 1.7;
 }
 body h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bold;
+  line-height: 1.7;
 }
 body h3 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 500;
+  line-height: 1.7;
 }
 body h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1.7;
 }
 body p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 1.7;
 }
 
 .socials {
@@ -50,31 +54,39 @@ body p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 100px;
+  padding: 50px;
   border-radius: 50px;
-  gap: 50px;
+  gap: 20px;
   background-color: white;
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   color: #225B5D;
 }
 .white div {
   display: flex;
   gap: 20px;
 }
+.white h5 {
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #225B5D;
+  color: white;
+  font-weight: 400;
+}
 
 .green {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 100px;
+  padding: 50px;
   border-radius: 50px;
-  gap: 50px;
+  gap: 20px;
   background-color: #225B5D;
   box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   color: white;
 }
 .green div {
@@ -82,19 +94,106 @@ body p {
   gap: 20px;
 }
 
+.copper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  border-radius: 50px;
+  gap: 20px;
+  background-color: #B87333;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  color: white;
+}
+.copper div {
+  display: flex;
+  gap: 20px;
+}
+.copper h5 {
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: #B87333;
+  font-weight: 400;
+}
+
 button {
-  padding: 15px 50px;
+  padding: 10px 50px;
   border: 1px solid white;
   border-radius: 50px;
   background: #04D1AF;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: 0.5s;
 }
 button:hover {
   background-color: #143738;
   cursor: pointer;
+}
+
+button.alt {
+  padding: 10px 50px;
+  background: rgba(4, 209, 175, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+button.alt:hover {
+  background: hsla(170, 96%, 20%, 0.2);
+}
+
+hr#white {
+  border: none;
+  border-top: 4px dashed rgb(255, 255, 255);
+  margin: 1rem 0;
+  width: 100%;
+  height: 0;
+}
+
+hr#green {
+  border: none;
+  border-top: 4px dashed #225B5D;
+  margin: 1rem 0;
+  width: 100%;
+  height: 0;
+}
+
+hr#short {
+  border: none;
+  border-top: 4px dashed #225B5D;
+  margin: 1rem 0;
+  width: 25%;
+  height: 0;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background: #225B5D;
+  color: white;
+  padding: 10px 30px;
+  transition: padding 0.5s ease;
+}
+.accordion summary {
+  cursor: pointer;
+}
+.accordion .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 1rem;
+}
+.accordion .content #highlight {
+  color: #04D1AF;
+}
+.accordion[open] {
+  padding: 30px 30px;
 }
 
 nav {
@@ -121,6 +220,9 @@ nav .routes {
   align-items: center;
   transition: 1s;
 }
+nav .routes a {
+  font-weight: 500;
+}
 nav .routes .dropdown {
   padding: 25px 0;
 }
@@ -130,6 +232,7 @@ nav .routes .dropdown .content {
 nav .routes .dropdown .content a {
   display: block;
   padding: 25px;
+  font-weight: 400;
 }
 nav .routes .dropdown:hover .content {
   display: block;
@@ -226,54 +329,54 @@ footer a {
   font-weight: 400;
 }
 
-.hero {
+section.hero {
   display: flex;
   justify-content: center;
   background: url("/assets/images/ginta.JPG") left;
   background-size: cover;
 }
-.hero div {
-  margin: 500px 100px;
+section.hero div {
+  margin: 200px 0px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding: 100px;
+  gap: 20px;
+  padding: 50px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.4);
+  background: hsla(160, 100%, 98%, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgb(255, 255, 255);
   width: 100%;
   max-width: 500px;
-  margin-left: 50%;
-  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.8);
+  margin-left: 40%;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
   color: white;
 }
 
-.home {
+section.home {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 200px 0;
+  margin: 200px 0 100px;
   gap: 100px;
 }
 
 section.contact {
   background: url("/assets/images/matt-hardy.jpg");
   background-size: cover;
-  padding: 500px 0;
+  padding: 200px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
 }
 section.contact .profilepic {
   border-radius: 100%;
-  border: solid rgba(255, 255, 255, 0.5) 20px;
+  border: solid rgba(255, 255, 255, 0.5) 10px;
 }
 section.contact .glass {
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   border-radius: 50px;
   color: white;
   text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
@@ -285,7 +388,7 @@ section.contact .glass {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 50px;
+  gap: 25px;
 }
 section.contact .buttons {
   display: flex;
@@ -294,6 +397,7 @@ section.contact .buttons {
   gap: 50px;
 }
 section.contact .buttons button {
+  padding: 10px 30px;
   background: rgba(4, 209, 175, 0.2);
   text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
   backdrop-filter: blur(20px);
@@ -307,20 +411,118 @@ section.contact .buttons button:hover {
   background: hsla(170, 96%, 20%, 0.2);
 }
 
+section.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section.about .copper h2 {
+  color: white;
+}
+
+section.pairs {
+  padding: 200px 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+section.pairs h1, section.pairs h2 {
+  color: #225B5D;
+}
+
+section.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0 200px;
+}
+section.testimonial-list h2 {
+  color: #225B5D;
+}
+
+.testimonial {
+  background: #225B5D;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.testimonial p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.testimonial cite {
+  display: block;
+  font-style: normal;
+  color: #04D1AF;
+  font-weight: 600;
+  text-align: right;
+}
+
+section.podcast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+section.podcast h2 {
+  color: #225B5D;
+}
+section.podcast div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+section.podcast .podcasts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border-radius: 50px;
+  gap: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 300px;
+  color: #225B5D;
+}
+section.podcast .podcasts img {
+  border-radius: 25px;
+}
+section.podcast .podcasts div {
+  display: flex;
+  gap: 20px;
+}
+section.podcast .podcasts h5 {
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #225B5D;
+  color: white;
+  font-weight: 400;
+}
+
 @media (max-width: 576px) {
-  .white, .green {
+  .white, .green, .copper {
     padding: 100px 25px;
     border-radius: 0;
     box-shadow: none;
   }
-  .hero {
+  section.hero {
     background-position: 18% 50%;
   }
-  .hero div {
+  section.hero div {
     margin: 700px 10px 50px;
     padding: 25px;
   }
-  .home {
+  section.home {
     margin: 0;
     gap: 0;
   }
@@ -330,31 +532,36 @@ section.contact .buttons button:hover {
   section.contact .glass {
     padding: 25px;
   }
+  Section.about {
+    gap: 0;
+  }
 }
 @media (max-width: 768px) {
-  .nav-link {
+  nav .routes .nav-link {
     display: none;
   }
-  .menu {
+  nav .menu {
     display: block;
   }
 }
 @media (max-width: 1120px) {
+  footer {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1440px) {
   nav {
-    left: 25px;
-    right: 25px;
+    left: 15px;
+    right: 15px;
+    top: 15px;
     padding: 25px 50px;
   }
   nav .routes {
     gap: 50px;
   }
-  footer {
-    justify-content: space-between;
-  }
 }
 @media (min-width: 769px) {
-  .menu {
+  nav .menu {
     display: none;
-    /* Hide menu at larger screen sizes */
   }
 }/*# sourceMappingURL=style.css.map */

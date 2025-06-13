@@ -1,0 +1,33 @@
+section.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0 200px;
+  h2 {
+    color: $darkTurkis;
+  }
+}
+
+.testimonial {
+  background: $darkTurkis;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: white;
+
+  p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  cite {
+    display: block;
+    font-style: normal;
+    color: $turkis;
+    font-weight: 600;
+    text-align: right;
+  }
+}

@@ -31,20 +31,24 @@
     <div id="app">
         <nav>
             <router-link to="/" class="logo">
-                <img src="assets/svgs/logo.svg" alt="Ginta Logo" width="150" height="100">
+                <img src="assets/svgs/logo.svg" alt="Ginta Logo" width="125" height="125">
             </router-link>
             <div class="routes">
                 <router-link to="/" class="nav-link">Hjem</router-link>
                 <div class="dropdown">
-                    <router-link to="/" class="nav-link">Jeg tilbyder</router-link>
+                    <router-link to="/individuelt" class="nav-link">Jeg tilbyder</router-link>
                     <div class="content">
-                        <router-link to="/" class="nav-link">Individuelt forløb</router-link>
-                        <router-link to="/" class="nav-link">Gruppe forløb</router-link>
-                        <router-link to="/" class="nav-link">Rygestop forløb</router-link>
-                        <router-link to="/" class="nav-link">Online forløb</router-link>
+                        <router-link to="/individuelt" class="nav-link">Individuelt forløb</router-link>
+                        <router-link to="/gruppe" class="nav-link">Gruppe forløb</router-link>
+                        <router-link to="/online" class="nav-link">Online forløb</router-link>
                     </div>
                 </div>
-                <router-link to="/about" class="nav-link">Om Ginta</router-link>
+                <div class="dropdown">
+                    <router-link to="/about" class="nav-link">Om Ginta</router-link>
+                    <div class="content">
+                        <router-link to="/livserfaring" class="nav-link">Min livserfaring med tvangsoverspisning</router-link>
+                    </div>
+                </div>
                 <router-link to="/contact" class="nav-link">Kontakt</router-link>
 
                 <a href="https://www.facebook.com/ginta.overspisningscoach" target="_blank" class="nav-link"
@@ -109,20 +113,19 @@
             </div>
             <div class="footer">
                 <h4>Jeg tilbyder</h4>
-                <router-link to="/">Individuelt forløb</router-link>
-                <router-link to="/">Gruppe forløb</router-link>
-                <router-link to="/">Rygestop forløb</router-link>
-                <router-link to="/">Online forløb</router-link>
+                <router-link to="/individuelt">Individuelt forløb</router-link>
+                <router-link to="/gruppe">Gruppe forløb</router-link>
+                <router-link to="/online">Online forløb</router-link>
             </div>
             <div class="footer">
                 <h4>Om Ginta</h4>
                 <router-link to="/">Gå til forside</router-link>
-                <router-link to="/">Om mig</router-link>
-                <router-link to="/">Min livserfaring med tvangsoverspisning</router-link>
+                <router-link to="/about">Om mig</router-link>
+                <router-link to="/livserfaring">Min livserfaring med tvangsoverspisning</router-link>
             </div>
             <div class="footer">
                 <h4>Betingelser</h4>
-                <router-link to="/">Samarbejdsvilkår og betalingsbetingelser</router-link>
+                <router-link to="/betingelser">Samarbejdsvilkår og betalingsbetingelser</router-link>
                 <p>© 2025 Ginta/ vane- og overspisningscoach. Kolding, Denmark.</p>
             </div>
         </footer>

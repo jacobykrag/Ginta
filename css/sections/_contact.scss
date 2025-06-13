@@ -1,0 +1,49 @@
+section.contact {
+    background: url("/assets/images/matt-hardy.jpg");
+    background-size: cover;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .profilepic {
+        border-radius: 100%;
+        border: solid rgba(255, 255, 255, 0.50) 10px;
+    }
+    .glass {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 50px;
+        color: white;
+        text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        button {
+            padding: 10px 30px;
+            background: rgba(4, 209, 175, 0.2);
+            text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            &:hover {
+                background: hsla(170, 96%, 20%, 0.2);
+            }
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                gap: 25px;
+        }
+    }
+}

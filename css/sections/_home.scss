@@ -1,0 +1,31 @@
+section.hero {
+    display: flex;
+    justify-content: center;
+    background: url("/assets/images/ginta.JPG") left;
+    background-size: cover;
+
+    div {
+        margin: 200px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+        border-radius: 50px;
+        background: hsla(160, 100%, 98%, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 1);
+        width: 100%;
+        max-width: 500px;
+        margin-left: 40%;
+        text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+        color: white;
+    }
+}
+section.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0 100px;
+    gap: 100px;
+}

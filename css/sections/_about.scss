@@ -1,0 +1,8 @@
+section.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .copper h2 {color: white;}
+}

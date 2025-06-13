@@ -1,12 +1,24 @@
-import Home from './components/Home.js';
-import About from './components/About.js';
-import Contact from './components/Contact.js';
-import NotFound from './components/NotFound.js';
+import Home from './websites/Home.js';
+import Individuelt from './websites/Individuelt.js';
+import Gruppe from './websites/Gruppe.js';
+import Online from './websites/Online.js';
+import Rygestop from './websites/Rygestop.js';
+import Livserfaring from './websites/Livserfaring.js';
+import About from './websites/About.js';
+import Contact from './websites/Contact.js';
+import Betingelser from './websites/Betingelser.js';
+import NotFound from './websites/NotFound.js';
 
 const routes = [
     { path: '/', component: Home },
+    { path: '/individuelt', component: Individuelt },
+    { path: '/gruppe', component: Gruppe },
+    { path: '/online', component: Online },
+    { path: '/rygestop', component: Rygestop },
     { path: '/about', component: About },
+    { path: '/livserfaring', component: Livserfaring },
     { path: '/contact', component: Contact },
+    { path: '/betingelser', component: Betingelser },
     { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 
