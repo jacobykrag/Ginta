@@ -6,7 +6,7 @@ export default {
     },
 template: `
 <section class="pairs">
-    <img src="/assets/svgs/Woman.svg" alt="Woman" height="200" width="200">
+    <img src="/assets/svgs/woman.webp" alt="Woman" height="200" width="200">
     <h1>Individuelt forløb</h1>
     <div class="green">
         <h4>Individuelt forløb; er for dig som ønsker individuel 1:1 coaching. Et forløb hos mig handler konkret om at

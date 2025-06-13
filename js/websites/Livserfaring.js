@@ -1,7 +1,7 @@
 export default {
 template: `
 <section class="pairs">
-    <img src="/assets/svgs/Woman.svg" alt="Woman" height="200" width="200">
+    <img src="/assets/svgs/woman.webp" alt="Woman" height="200" width="200">
     <h1>Min livserfaring med tvangsoverspisning</h1>
     <div class="copper livserfaring">
         <h4>Jeg har levet det meste af mit liv med overdreven kontrol, strikse regler for hvad jeg måtte spise og er

@@ -332,7 +332,7 @@ footer a {
 section.hero {
   display: flex;
   justify-content: center;
-  background: url("/assets/images/ginta.JPG") left;
+  background: url("/assets/images/Ginta.webp") left;
   background-size: cover;
 }
 section.hero div {
@@ -362,7 +362,7 @@ section.home {
 }
 
 section.contact {
-  background: url("/assets/images/matt-hardy.jpg");
+  background: url("/assets/images/Matt-hardy.webp");
   background-size: cover;
   padding: 200px 0;
   display: flex;
