@@ -1,7 +1,7 @@
 export default {
 template: `
 <section class="pairs">
-    <img src="/assets/svgs/WoMan.webp" alt="Woman" height="200" width="200">
+    <img src="/assets/svgs/Woman.webp" alt="Woman" height="200" width="200">
     <h1>Lidt baggrundsviden om mig</h1>
     <section class="about">
         <div class="copper">
