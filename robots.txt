@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Angiv placeringen af dit XML-sitemap
-Sitemap: https://kragstudio.dk/sitemap.xml
+Sitemap: https://ginta.dk/sitemap.xml

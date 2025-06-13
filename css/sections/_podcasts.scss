@@ -2,6 +2,7 @@ section.podcast {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 100px;
     gap: 20px;
     h2 {
         color: $darkTurkis;
@@ -10,6 +11,7 @@ section.podcast {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
     }
 
@@ -42,6 +44,21 @@ section.podcast {
             background-color: $darkTurkis;
             color: white;
             font-weight: 400;
+        }
+        a button {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .apple button {
+            background-color: $purple;
+        }
+        .spotify button {
+            background-color: #1e1e1e;
+            &:hover {
+                background-color: hsl(141, 76%, 20%);
+            }
         }
     }
 }

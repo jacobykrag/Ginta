@@ -3,7 +3,7 @@ template: `
 <section class="pairs">
     <img src="/assets/svgs/Woman.svg" alt="Woman" height="200" width="200">
     <h1>Min livserfaring med tvangsoverspisning</h1>
-    <div class="copper">
+    <div class="copper livserfaring">
         <h4>Jeg har levet det meste af mit liv med overdreven kontrol, strikse regler for hvad jeg måtte spise og er
             vokset op med en opfattelse af at min krop var forkert. Med årene udviklede det sig til et opslidende
             arbejde, både følelsesmæssigt og fysisk. Det drænede mig for så meget energi, så når jeg havde levet
@@ -26,15 +26,15 @@ template: `
             min egen erfaring og proces, giver det mig muligheden for at møde dig og andre, med lignende
             problemstillinger med empati, respekt og i øjenhøjde.</p>
     </div>
-    <h2>Vil du også slippe overspisningen?</h2>
     <div class="white">
+        <h2>Vil du også slippe overspisningen?</h2>
         <hr id="green">
         <p>Individuelt forløb; er for dig som ønsker individuel 1:1 coaching. Et forløb hos mig handler konkret om at
             gøre dig bevidst om hvad der er årsagen til din overspisninger, hvordan du kan håndtere dine følelser uden
             overspisning og hvordan du styrer efter hvornår du er sulten, mæt og hvad der er nydelse for dig. Jeg vil
             gerne støtte dig i, at der findes en vej som tager udgangspunkt i der hvor du er i dit liv, dine vaner og
             hvad du ønsker at opnå.</p>
-            <router-link to="/contact"><button>Individuelt forløb</button></router-link>
+        <router-link to="/contact"><button>Individuelt forløb</button></router-link>
     </div>
 </section>
 `,

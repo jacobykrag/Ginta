@@ -307,7 +307,7 @@ footer h4, footer a, footer p {
 footer .footer {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
 footer .footer span {
   background-color: white;
@@ -357,7 +357,7 @@ section.home {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 200px 0 100px;
+  margin: 100px 0 100px;
   gap: 100px;
 }
 
@@ -440,7 +440,7 @@ section.testimonial-list {
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
-  padding: 50px 0 200px;
+  padding: 0px 0 200px;
 }
 section.testimonial-list h2 {
   color: #225B5D;
@@ -469,6 +469,7 @@ section.podcast {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 100px;
   gap: 20px;
 }
 section.podcast h2 {
@@ -478,6 +479,7 @@ section.podcast div {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 section.podcast .podcasts {
@@ -508,18 +510,68 @@ section.podcast .podcasts h5 {
   color: white;
   font-weight: 400;
 }
+section.podcast .podcasts a button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 20px;
+}
+section.podcast .podcasts .apple button {
+  background-color: #2E2046;
+}
+section.podcast .podcasts .spotify button {
+  background-color: #1e1e1e;
+}
+section.podcast .podcasts .spotify button:hover {
+  background-color: hsl(141, 76%, 20%);
+}
+
+main.not-found {
+  display: flex;
+  justify-content: center;
+  padding: 300px 20px;
+}
+main.not-found .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main.not-found h1 {
+  font-size: 4rem;
+  color: #225B5D;
+}
+main.not-found p {
+  font-size: 1.4rem;
+  color: #225B5D;
+}
+main.not-found .home-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+main.not-found img {
+  border-radius: 100%;
+  margin: 0 auto;
+}
 
 @media (max-width: 576px) {
-  .white, .green, .copper {
+  .white, .green {
     padding: 100px 25px;
     border-radius: 0;
     box-shadow: none;
+  }
+  .copper {
+    margin: 20px;
+    padding: 30px;
+  }
+  .livserfaring {
+    border-radius: 0;
   }
   section.hero {
     background-position: 18% 50%;
   }
   section.hero div {
-    margin: 700px 10px 50px;
+    margin: 700px 20px 50px;
     padding: 25px;
   }
   section.home {
@@ -528,12 +580,25 @@ section.podcast .podcasts h5 {
   }
   section.contact {
     padding: 300px 10px;
+    gap: 50px;
   }
   section.contact .glass {
-    padding: 25px;
+    padding: 30px;
   }
-  Section.about {
+  section.contact .buttons {
+    justify-content: center;
+  }
+  section.about {
     gap: 0;
+  }
+  section.podcast {
+    padding: 100px 0;
+  }
+  section.testimonial-list {
+    padding: 0;
+  }
+  section.testimonial-list .testimonial {
+    margin: 20px;
   }
 }
 @media (max-width: 768px) {

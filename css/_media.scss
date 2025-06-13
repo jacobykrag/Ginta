@@ -5,15 +5,22 @@ $laptop: 1120px;
 $mac: 1440px;
 
 @media (max-width: $mobile) {
-    .white, .green, .copper {
+    .white, .green {
         padding: 100px 25px;
         border-radius: 0;
         box-shadow: none;
     }
+    .copper {
+        margin: 20px;
+        padding: 30px;
+    }
+    .livserfaring {
+        border-radius: 0;
+    }
     section.hero {
         background-position: 18% 50%;
         div {
-        margin: 700px 10px 50px;
+        margin: 700px 20px 50px;
         padding: 25px;
     }
     }
@@ -23,12 +30,25 @@ $mac: 1440px;
     }
     section.contact {
         padding: 300px 10px;
+        gap: 50px;
         .glass {
-            padding: 25px;
+            padding: 30px;
+        }
+        .buttons {
+            justify-content: center;
         }
     }
-    Section.about {
+    section.about {
         gap: 0;
+    }
+    section.podcast {
+        padding: 100px 0;
+    }
+    section.testimonial-list {
+        padding: 0;
+        .testimonial {
+            margin: 20px;
+        }
     }
 }
 
