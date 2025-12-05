@@ -26,16 +26,6 @@ template: `
             min egen erfaring og proces, giver det mig muligheden for at møde dig og andre, med lignende
             problemstillinger med empati, respekt og i øjenhøjde.</p>
     </div>
-    <div class="white">
-        <h2>Vil du også slippe overspisningen?</h2>
-        <hr id="green">
-        <p>Individuelt forløb; er for dig som ønsker individuel 1:1 coaching. Et forløb hos mig handler konkret om at
-            gøre dig bevidst om hvad der er årsagen til din overspisninger, hvordan du kan håndtere dine følelser uden
-            overspisning og hvordan du styrer efter hvornår du er sulten, mæt og hvad der er nydelse for dig. Jeg vil
-            gerne støtte dig i, at der findes en vej som tager udgangspunkt i der hvor du er i dit liv, dine vaner og
-            hvad du ønsker at opnå.</p>
-        <router-link to="/contact"><button>Individuelt forløb</button></router-link>
-    </div>
 </section>
 `,
 };

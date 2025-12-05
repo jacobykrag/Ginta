@@ -1,7 +1,7 @@
 section.about {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: safe;
     justify-content: center;
     gap: 20px;
     .copper h2 {color: white;}

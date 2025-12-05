@@ -11,7 +11,7 @@ body a {
   color: #225B5D;
   text-decoration: none;
   transition: 0.5s;
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 600;
 }
 body a:hover {
@@ -33,14 +33,17 @@ body h3 {
   line-height: 1.7;
 }
 body h4 {
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 600;
   line-height: 1.7;
 }
 body p {
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 400;
   line-height: 1.7;
+}
+body i {
+  font-size: 18px;
 }
 
 .socials {
@@ -198,7 +201,7 @@ hr#short {
 
 nav {
   position: fixed;
-  top: 50px;
+  top: 25px;
   left: 100px;
   right: 100px;
   height: 75px;
@@ -350,15 +353,14 @@ section.hero div {
   gap: 20px;
   padding: 50px;
   border-radius: 50px;
-  background: hsla(160, 100%, 98%, 0.1);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgb(255, 255, 255);
   width: 100%;
   max-width: 500px;
   margin-left: 40%;
-  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
-  color: white;
+  color: #225B5D;
 }
 
 section.home {
@@ -386,8 +388,7 @@ section.contact .glass {
   width: 100%;
   max-width: 500px;
   border-radius: 50px;
-  color: white;
-  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.5);
+  color: #225B5D;
   padding: 50px;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(20px);
@@ -422,7 +423,7 @@ section.contact .buttons button:hover {
 section.about {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: safe;
   justify-content: center;
   gap: 20px;
 }
@@ -455,7 +456,7 @@ section.testimonial-list h2 {
 }
 
 .testimonial {
-  background: #225B5D;
+  background: #B87333;
   border-radius: 25px;
   padding: 2rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -468,7 +469,7 @@ section.testimonial-list h2 {
 .testimonial cite {
   display: block;
   font-style: normal;
-  color: #04D1AF;
+  color: white;
   font-weight: 600;
   text-align: right;
 }
@@ -486,7 +487,6 @@ section.podcast h2 {
 section.podcast div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -494,6 +494,7 @@ section.podcast .podcasts {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 50px;
   border-radius: 50px;
   gap: 20px;
@@ -526,6 +527,9 @@ section.podcast .podcasts a button {
 }
 section.podcast .podcasts .apple button {
   background-color: #2E2046;
+}
+section.podcast .podcasts .apple button:hover {
+  background-color: hsl(276, 100%, 50%);
 }
 section.podcast .podcasts .spotify button {
   background-color: #1e1e1e;
