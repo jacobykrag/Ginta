@@ -257,6 +257,7 @@ nav .after {
 }
 
 .stop {
+  display: none;
   visibility: hidden;
   opacity: 0;
   height: 0;
@@ -605,6 +606,9 @@ main.not-found img {
   }
   section.podcast {
     padding: 100px 0;
+  }
+  section.podcast div {
+    justify-content: center;
   }
   section.testimonial-list {
     padding: 0;

@@ -43,6 +43,9 @@ $mac: 1440px;
     }
     section.podcast {
         padding: 100px 0;
+        div {
+            justify-content: center;
+        }
     }
     section.testimonial-list {
         padding: 0;
